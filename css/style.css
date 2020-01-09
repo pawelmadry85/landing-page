@@ -1,0 +1,39 @@
+/*variables*/
+/* glowny font */
+body {
+  margin: 0 0;
+  padding: 0 0;
+  font-family: "Lato", sans-serif;
+}
+
+/*NAVIGATION*/
+.navbar {
+  margin-top: 80px;
+  width: 100%;
+  height: 60px;
+}
+
+.navbar-logo img {
+  padding-top: 10px;
+  width: 100px;
+  height: auto;
+}
+
+.navbar-nav {
+  float: right;
+  background: none;
+  padding: 4px 0;
+  list-style-type: none;
+}
+
+.nav-item {
+  text-transform: uppercase;
+  margin: 0 10px;
+  display: inline-block;
+}
+
+.nav-link {
+  color: blue;
+  text-decoration: none;
+}
+/*# sourceMappingURL=style.css.map */
