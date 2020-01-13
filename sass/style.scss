@@ -1,5 +1,17 @@
 /*variables*/
 $font-body: 'Roboto', sans-serif;
+.padding-top-100 {
+    padding-top: 100px;
+}
+.margin-top-100 {
+    margin-top: 100px;
+}
+.padding-bottom-100 {
+    padding-bottom: 100px;
+}
+.margin-bottom-100 {
+    margin-bottom: 100px;
+}
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -136,4 +148,68 @@ i {
 }
 .services-text {
     margin-top: 20px;
+}
+/*OUR PORTFOLIO*/
+.portfolio {
+    display: inline-block;
+    background: silver;
+    height: auto;
+    width: 100%;
+    text-align: center;
+}
+.box-3-portfolio {
+    display: flex;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+.box-portfolio {
+    width: calc(33.333333% - 36px);
+    margin: 18px;
+    height: 420px;
+    background: #ffffff;
+}
+.img-portfolio {
+    object-fit: cover;
+    width: 100%;
+    height: 330px;
+}
+.box-inner-portfolio {
+    padding-top: 15px;
+}
+.portfolio-h4 {
+    font-size: 20px;
+    font-weight: bolder;
+}
+.portfolio-h5 {
+    font-size: 14px;
+    font-style: italic;
+}
+/*FOOTER*/
+footer {
+    background: #ffffff;
+}
+.box-2-footer {
+    display: flex;
+    height: 140px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.copyright {
+    font-size: 16px;
+    width: 380px;
+    padding-left: 20px;
+}
+.social-media {
+    display: inline-block;
+}
+.icon-social {
+    padding-top: 15px;
+    padding-left: 15px;
+    width: 70px;
+    height: 70px;
+    margin-right: 15px;
+    background: #000000;
+    color: white;
 }
