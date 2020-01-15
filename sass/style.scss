@@ -1,47 +1,31 @@
-/*variables*/
+/************** VARIABLES **************/
+
 $font-body: 'Roboto', sans-serif;
-.padding-top-100 {
-    padding-top: 100px;
-}
-.margin-top-100 {
-    margin-top: 100px;
-}
-.padding-bottom-100 {
-    padding-bottom: 100px;
-}
-.margin-bottom-100 {
-    margin-bottom: 100px;
+
+/************** CLEAR STYLES **************/
+
+* {
+margin: 0;
+padding: 0;
+border: 0;
+line-height: 1.4em;
+vertical-align: baseline;
+text-decoration: none;
+outline: 0;
+font-family: $font-body;
+font-weight: normal;
 }
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-    font-family: $font-body;
-}
-/* NAVIGATION */
+/************** NAVIGATION **************/
+
 .navbar {
-    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
     width: 100%;
     height: 60px;
 }
 .navbar-logo img {
-    padding-top: 10px;
     width: 100px;
     height: auto;
 }
@@ -50,6 +34,8 @@ time, mark, audio, video {
     background: none;
     padding: 4px 0;
     list-style-type: none;
+    font-size: 18px;
+    font-weight: lighter;
 }
 .nav-item {
     text-transform: uppercase;
@@ -61,20 +47,25 @@ time, mark, audio, video {
     color: #ffffff;
     text-decoration: none;
 }
-/* HEADER */
+.nav-link:hover {
+    color: #fed136;
+}
+
+/************** HEADER **************/
+
 .splash {
     background-image: url('../images/home-bg.jpg');
     background-position: center center;
     background-size: cover;
     color: #ffffff;
-    height: 700px;
+    min-height: 750px;
 }
 .box-splash {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 600px; /*czy to jest ok?*/
+    height: 600px; // dlaczego 600px ?
     text-align: center;
 }
 .box-inner {
@@ -99,26 +90,40 @@ time, mark, audio, video {
 .btn-box {
     display: inline-block;
     margin-top: 20px;
-    width: 300px;
     text-align: center;
-    padding: 16px 20px;
-    border-radius: 2px;
-    background-color: orange;
+    padding: 20px 40px;
+    border-radius: 6px;
+    background-color: #fed136;
     color: #ffffff;
     border: none;
     text-transform: uppercase;
     text-decoration: none;
 }
-/* SERVICES */
+.btn-box:hover {
+    background: #000000;
+    color: #fed136;
+}
+
+/************** SERVICES **************/
+
 .services {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 600px; /*czy to jest ok?*/
     text-align: center;
 }
+.space-top {
+    margin-top: 100px;
+}
+.space-bottom {
+    margin-bottom: 100px;
+}
+.space-top-20 {
+    margin-top: 20px;
+}
 .box-services {
+    margin-bottom: 60px;
     display: inline-block;
 }
 .services-title {
@@ -128,19 +133,16 @@ time, mark, audio, video {
     font-weight: 700;
     color: #000000;
 }
-.box-3-columns {
-    margin-top: 100px;
-}
 i {
     font-size: 36px;
-    color: orange;
+    color: #fed136;
     border-radius: 50%;
 }
 .icon {
     padding-top: 20px;
     width: 80px;
     height: 80px;
-    border: 2px solid orange;
+    border: 2px solid #fed136;
 }
 .services-option {
     margin-top: 20px;
@@ -149,7 +151,8 @@ i {
 .services-text {
     margin-top: 20px;
 }
-/*OUR PORTFOLIO*/
+
+/************** OUR PORTFOLIO **************/
 .portfolio {
     display: inline-block;
     background: silver;
@@ -186,30 +189,141 @@ i {
     font-size: 14px;
     font-style: italic;
 }
-/*FOOTER*/
+
+/************** FOOTER **************/
+
 footer {
     background: #ffffff;
 }
 .box-2-footer {
     display: flex;
-    height: 140px;
-    flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100px;
 }
 .copyright {
-    font-size: 16px;
-    width: 380px;
     padding-left: 20px;
+    font-size: 16px;
+    width: 33.33333%;
 }
 .social-media {
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 33.33333%;
 }
-.icon-social {
-    padding-top: 15px;
-    padding-left: 15px;
-    width: 70px;
-    height: 70px;
-    margin-right: 15px;
+.ico {
+    margin-right:10px;
+    width: 60px;
+    height: 60px;
+    display: inline-block;
     background: #000000;
-    color: white;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 0;
+    line-height: 1;
+    transition: all 400ms ease-in-out;
+}
+.social-media li i {
+    padding-top: 20px;
+    font-size: 20px;
+    color: #fff;
+}
+.ico:hover {
+    transform: scale(1.2, 1.2);
+}
+.empty-footer-box {
+    width: 33.33333%;
+}
+
+/************** RWD **************/
+@media (min-width: 480px) and (max-width: 768px) {
+
+    
+    
+    
+    
+    
+    .spalsh {
+        min-height: 650px;
+    }
+    .box-splash {
+        height: 500px;
+    }
+    .box-services {
+        margin-bottom: 20px;
+    }
+    .space-top {
+        margin-top: 40px;
+    }
+    .space-bottom {
+        margin-bottom: 40px;
+    }
+    .box-portfolio {
+        width: calc(43.333333% - 36px);
+        height: 370px;
+    }
+    .img-portfolio {
+        height: 280px;
+    }
+    .copyright {
+        margin: 20px;
+        font-size: 12px;;
+        padding: 0;
+        width: auto;
+    }
+    .social-media {
+        margin: 20px 0 20px 0;
+        width: auto;
+    }
+    .empty-footer-box {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+
+
+
+
+    .splash {
+        min-height: 550px;
+    }
+    .box-splash {
+        height: 400px;
+    }
+    .page-title {
+        font-size: 14px;
+    }
+    .page-subtitle {
+        font-size: 30px;
+    }
+    .btn-box {
+        font-size: 12px;
+        padding: 10px 20px;
+    }
+    .box-services {
+        margin-bottom: 20px;
+    }
+    .space-top {
+        margin-top: 40px;
+    }
+    .space-bottom {
+        margin-bottom: 40px;
+    }
+    .box-portfolio {
+        width: 100%;
+    }
+    .copyright {
+        margin: 20px 0;
+        font-size: 12px;;
+        padding: 0;
+        width: auto;
+    }
+    .social-media {
+        margin: 0 0 20px 0;
+        width: auto;
+    }
 }
