@@ -13,7 +13,7 @@
 }
 
 /************** NAVIGATION **************/
-.navbar {
+.navigation {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: justify;
@@ -23,13 +23,13 @@
   height: 60px;
 }
 
-.navbar-logo img {
+.logo img {
   width: 100px;
   height: auto;
 }
 
 .navbar-nav {
-  float: right;
+  text-align: right;
   background: none;
   padding: 4px 0;
   list-style-type: none;
@@ -285,6 +285,37 @@ footer {
 
 /************** RWD **************/
 @media (min-width: 480px) and (max-width: 768px) {
+  .navigation {
+    display: inline;
+  }
+  .logo {
+    padding-top: 40px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center;
+  }
+  .navbar-nav {
+    margin-top: 20px;
+    text-align: center;
+  }
+  .nav-item {
+    margin: 0 4px;
+  }
+  .nav-link {
+    background-color: #fed136;
+    padding: 5px;
+    color: black;
+    border-radius: 4px;
+  }
+  .nav-link:hover {
+    color: #fed136;
+    padding: 5px;
+    background-color: #000000;
+    border-radius: 4px;
+  }
   .spalsh {
     min-height: 650px;
   }
@@ -323,6 +354,38 @@ footer {
 }
 
 @media (max-width: 480px) {
+  .navigation {
+    display: inline;
+  }
+  .logo {
+    padding-top: 40px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center;
+  }
+  .navbar-nav {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 10px;
+  }
+  .nav-item {
+    margin: 0 2px;
+  }
+  .nav-link {
+    background-color: #fed136;
+    padding: 4px;
+    color: black;
+    border-radius: 4px;
+  }
+  .nav-link:hover {
+    color: #fed136;
+    padding: 4px;
+    background-color: #000000;
+    border-radius: 4px;
+  }
   .splash {
     min-height: 550px;
   }
