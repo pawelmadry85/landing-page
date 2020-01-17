@@ -297,15 +297,12 @@ footer {
     margin: 40px 0 40px 0;
     font-size: 12px;
     padding-left: 20px;
-    text-align: center;
+    text-align: left;
     width: 33.333%;
   }
   .social-media {
     margin: 40px 0 40px 0;
-    width: 66.666%;
-  }
-  .empty-footer-box {
-    display: none;
+    width: 33.333%;
   }
 }
 
