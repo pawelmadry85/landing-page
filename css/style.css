@@ -217,7 +217,7 @@ i {
   font-weight: bolder;
 }
 
-.portfolio-h5 {
+.portfolio-p {
   font-size: 14px;
   font-style: italic;
 }
@@ -257,7 +257,7 @@ footer {
 }
 
 .ico {
-  margin-right: 10px;
+  margin: 6px;
   width: 60px;
   height: 60px;
   display: inline-block;
@@ -284,6 +284,31 @@ footer {
 }
 
 /************** RWD **************/
+@media (min-width: 768px) and (max-width: 1024px) {
+  .box-2-footer {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center;
+  }
+  .copyright {
+    margin: 40px 0 40px 0;
+    font-size: 12px;
+    padding-left: 20px;
+    text-align: center;
+    width: 33.333%;
+  }
+  .social-media {
+    margin: 40px 0 40px 0;
+    width: 66.666%;
+  }
+  .empty-footer-box {
+    display: none;
+  }
+}
+
 @media (min-width: 480px) and (max-width: 768px) {
   .navigation {
     display: inline;
@@ -338,14 +363,18 @@ footer {
   .img-portfolio {
     height: 280px;
   }
+  .box-2-footer {
+    display: inline-block;
+  }
   .copyright {
-    margin: 20px;
+    margin: 40px 0 20px 0;
     font-size: 12px;
-    padding: 0;
+    padding-left: 0;
+    text-align: center;
     width: auto;
   }
   .social-media {
-    margin: 20px 0 20px 0;
+    margin: 20px 0 40px 0;
     width: auto;
   }
   .empty-footer-box {
@@ -414,14 +443,18 @@ footer {
   .box-portfolio {
     width: 100%;
   }
+  .box-2-footer {
+    display: inline-block;
+  }
   .copyright {
-    margin: 20px 0;
+    margin: 40px 0 20px 0;
     font-size: 12px;
-    padding: 0;
+    padding-left: 0;
+    text-align: center;
     width: auto;
   }
   .social-media {
-    margin: 0 0 20px 0;
+    margin: 0 0 40px 0;
     width: auto;
   }
 }
