@@ -302,7 +302,10 @@ footer {
   }
   .social-media {
     margin: 40px 0 40px 0;
-    width: 33.333%;
+    width: 43.333%;
+  }
+  .empty-footer-box {
+    display: none;
   }
 }
 
